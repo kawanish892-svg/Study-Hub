@@ -36,3 +36,33 @@ nav a{
 nav a:hover{
     color:#1d4ed8;
 }
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:40px;
+    color:#1e293b;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}

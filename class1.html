@@ -6,78 +6,158 @@
 
 <title>Class 1 | Study Hub</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+<link rel="stylesheet" href="css/style.css">
 
+<style>
 body{
-background:#f5f7fb;
-color:#222;
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f7fb;
 }
 
 header{
-background:#2563eb;
-color:white;
-padding:20px;
-text-align:center;
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
 header h1{
-font-size:38px;
+    margin:0;
 }
 
 header p{
-margin-top:8px;
-font-size:18px;
+    margin-top:10px;
 }
 
 nav{
-background:white;
-padding:15px;
-display:flex;
-justify-content:center;
-gap:25px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-flex-wrap:wrap;
+    background:#fff;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
 
 nav a{
-text-decoration:none;
-color:#2563eb;
-font-weight:bold;
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:bold;
+    margin:0 15px;
 }
 
 .hero{
-padding:70px 20px;
-text-align:center;
+    text-align:center;
+    padding:50px 20px;
 }
 
 .hero h2{
-font-size:42px;
-margin-bottom:15px;
+    font-size:36px;
 }
 
 .hero p{
-font-size:20px;
-margin-bottom:30px;
+    color:#555;
+    margin:15px 0 25px;
 }
 
 .btn{
-display:inline-block;
-background:#2563eb;
-color:white;
-padding:15px 35px;
-border-radius:8px;
-text-decoration:none;
-font-size:18px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+}
+
+.subjects{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.subjects h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-top:0;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
 }
 </style>
 
 </head>
+
+<body>
+
+<header>
+<h1>📘 Class 1</h1>
+<p>NCERT Books, Notes, MCQs & Quiz</p>
+</header>
+
+<nav>
+<a href="index.html">🏠 Home</a>
+<a href="#">Books</a>
+<a href="#">Notes</a>
+<a href="#">MCQs</a>
+<a href="#">Quiz</a>
+</nav>
+
+<section class="hero">
+<h2>Welcome to Class 1</h2>
+<p>Free Study Material for CBSE & NCERT Students</p>
+<a href="#" class="btn">Start Learning</a>
+</section>
+<section class="subjects">
+
+<h2>Choose Your Subject</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>📘 English</h3>
+<a href="english-class1.html">Open</a>
+</div>
+
+<div class="card">
+<h3>📕 Hindi</h3>
+<a href="#">Open</a>
+</div>
+
+<div class="card">
+<h3>📗 Mathematics</h3>
+<a href="#">Open</a>
+</div>
+
+<div class="card">
+<h3>🌿 EVS</h3>
+<a href="#">Open</a>
+</div>
+
+</div>
+
+</section>
+
 <section class="subjects">
 
 <h2>Study Resources</h2>
@@ -118,113 +198,12 @@ font-size:18px;
 
 </section>
 
+<footer style="background:#1e293b;color:white;text-align:center;padding:25px;margin-top:40px;">
+<p>© 2026 Study Hub. All Rights Reserved.</p>
+<p>Helping Students Learn Better 📚</p>
+</footer>
 
-<header>
+<script src="js/script.js"></script>
 
-<h1>📘 Class 1</h1>
-
-<p>NCERT Books, Notes, MCQs, Quiz & Worksheets</p>
-
-</header>
-
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="#">Books</a>
-
-<a href="#">Notes</a>
-
-<a href="#">MCQs</a>
-
-<a href="#">Quiz</a>
-
-</nav>
-
-<section class="hero">
-
-<h2>Welcome to Class 1</h2>
-
-<p>Free Study Materials for CBSE & NCERT Students</p>
-
-<a class="btn" href="#">Start Learning</a>
-
-</section>
-<style>
-.subjects{
-max-width:1200px;
-margin:auto;
-padding:40px 20px;
-}
-
-.subjects h2{
-text-align:center;
-margin-bottom:30px;
-font-size:32px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:12px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-margin-bottom:15px;
-}
-
-.card a{
-display:inline-block;
-margin-top:10px;
-background:#2563eb;
-color:white;
-padding:10px 20px;
-text-decoration:none;
-border-radius:6px;
-}
-</style>
-
-<section class="subjects">
-
-<h2>Choose Your Subject</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>📘 English</h3>
-<a href="english-class1.html">Open</a>
-</div>
-
-<div class="card">
-<h3>📕 Hindi</h3>
-<a href="#">Open</a>
-</div>
-
-<div class="card">
-<h3>📗 Mathematics</h3>
-<a href="#">Open</a>
-</div>
-
-<div class="card">
-<h3>🌿 EVS</h3>
-<a href="#">Open</a>
-</div>
-
-</div>
-
-</section>
 </body>
 </html>
